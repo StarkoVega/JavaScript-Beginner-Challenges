@@ -4,8 +4,8 @@
 //
 //
 //
-function calcPerimeter(length, width) {
-  return length * 2 + width * 2;
+function calcTriangleArea(base, height) {
+  return 0.5 * base * height
 }
 
-console.log(calcPerimeter(6, 7));
+console.log(calcTriangleArea(10, 10));
