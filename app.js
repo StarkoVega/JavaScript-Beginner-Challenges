@@ -4,8 +4,8 @@
 //
 //
 //
-function isLoggedInAndSubscribed(log, sub) {
-  return log === "LOGGED_IN" || sub === "SUBSCRIBED";
+function filterOutFalsey(elem1, elem2) {
+  return elem1 ? elem2 : elem1;
 }
 
-console.log(isLoggedInAndSubscribed("LOGGED_IN", "SUBSCRIBED"));
+console.log(filterOutFalsey("", "SUBSCRIBED"));
