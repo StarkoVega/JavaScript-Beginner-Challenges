@@ -4,14 +4,14 @@
 //
 //
 //
-function arrSum(arr) {
+function arrSum(num) {
   let sum = 0;
 
-  for (let i = 0; i < arr.length; ++i) {
-    sum += arr[i];
+  for (let i = 1; i <= num; ++i) {
+    sum += i;
   }
 
   return sum;
 }
 
-console.log(arrSum([0, 3, 5, 10]));
+console.log(arrSum(4));
