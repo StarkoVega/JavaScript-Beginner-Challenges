@@ -4,8 +4,8 @@
 //
 //
 //
-function calcTriangleArea(base, height) {
-  return 0.5 * base * height
+function appendFrontend(string) {
+  return string + "Frontend";
 }
 
-console.log(calcTriangleArea(10, 10));
+console.log(appendFrontend("Apple"));
