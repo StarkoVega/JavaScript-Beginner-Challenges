@@ -4,7 +4,7 @@
 //
 //
 //
-function reverseString(str) {
-  return str.split("").reverse().join("");
+function convertToZero(arr) {
+  return arr.map((elem) => 0);
 }
-console.log(reverseString("Jose"));
+console.log(convertToZero([3, 50, 102]));
