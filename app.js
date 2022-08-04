@@ -4,8 +4,8 @@
 //
 //
 //
-function lessThanOrEaualToZero(num) {
-  return num <= 0
+function oppositeBoolean(bool) {
+  return !bool;
 }
 
-console.log(lessThanOrEaualToZero(20));
+console.log(oppositeBoolean(false));
