@@ -4,7 +4,7 @@
 //
 //
 //
-function convertToZero(arr) {
-  return arr.map((elem) => 0);
+function removerApples(arr) {
+  return arr.filter((elem) => elem !== "Apple");
 }
-console.log(convertToZero([3, 50, 102]));
+console.log(removerApples(["Banana", "Apple", "Orange", "Apple"]));
