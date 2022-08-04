@@ -4,8 +4,8 @@
 //
 //
 //
-function filterOutFalsey(elem1, elem2) {
-  return elem1 ? elem2 : elem1;
+function arrLength(arr) {
+  return arr.length;
 }
 
-console.log(filterOutFalsey("", "SUBSCRIBED"));
+console.log(arrLength([0]));
