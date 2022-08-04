@@ -4,8 +4,8 @@
 //
 //
 //
-function booleanInteger(num) {
-  return (num % 2) * -2 + 1;
+function isLoggedInAndSubscribed(log, sub) {
+  return log === "LOGGED_IN" && sub === "SUBSCRIBED";
 }
 
-console.log(booleanInteger(5));
+console.log(isLoggedInAndSubscribed("LOGGED_IN", "SUBSCRIBED"));
