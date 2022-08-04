@@ -4,8 +4,8 @@
 //
 //
 //
-function isOdd(num) {
-  return num % 2 !== 0;
+function booleanInteger(num) {
+  return (num % 2) * -2 + 1;
 }
 
-console.log(isOdd(6));
+console.log(booleanInteger(5));
