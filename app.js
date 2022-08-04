@@ -4,8 +4,8 @@
 //
 //
 //
-function addition(num1, num2) {
-  return num1 + num2;
+function hoursToSeconds(hours) {
+  return hours * 3600
 }
 
-console.log(addition(3, 5));
+console.log(hoursToSeconds(2));
