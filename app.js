@@ -4,16 +4,11 @@
 //
 //
 //
-function calcTime(seconds) {
-  let timerMinutes = Math.floor(seconds / 60).toLocaleString("en-US", {
-    minimumIntegerDigits: 2,
-    useGrouping: false,
-  });
-  timerSeconds = (seconds % 60).toLocaleString("en-US", {
-    minimumIntegerDigits: 2,
-    useGrouping: false,
-  });
-  return timerMinutes + ":" + timerSeconds;
+function getMax(arr) {
+  let max = arr[0];
+  for (let i = 0; i < arr.length; ++i) {
+    max = max > arr[i] ? max : arr[i];
+  }
+  return max
 }
-
-console.log(calcTime(70));
+console.log(getMax([-200, -100, -300]));
