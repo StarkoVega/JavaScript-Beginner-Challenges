@@ -4,19 +4,8 @@
 //
 //
 //
-function showRating(num) {
-  let integer = Math.floor(num);
-  let rating = "";
-  for (let i = 0; i < integer; ++i) {
-    rating += "*";
-    if (i !== integer - 1) {
-      rating += " ";
-    }
-  }
-  if (num % 1 !== 0) {
-    rating += " .";
-  }
-  return rating;
+function sortLowToHigh(arr) {
+  return arr.sort((a, b) => a - b)
 }
 
-console.log(showRating(4));
+console.log(sortLowToHigh([4, 4, 2, 6, 15]));
