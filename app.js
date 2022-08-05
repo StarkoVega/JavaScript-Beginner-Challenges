@@ -4,8 +4,14 @@
 //
 //
 //
-function sortLowToHigh(arr) {
-  return arr.sort((a, b) => a - b)
+async function postByUser(uid) {
+  const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+  
+  const result = await promise.json();
+
+  const filtered = result.filter(elem => elem.userId === uid)
+
+  console.log(filtered)
 }
 
-console.log(sortLowToHigh([4, 4, 2, 6, 15]));
+postByUser(4);
