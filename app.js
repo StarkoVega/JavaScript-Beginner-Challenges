@@ -4,14 +4,14 @@
 //
 //
 //
-async function postByUser(uid) {
-  const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
-  
+async function firstSixIncompleted() {
+  const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+
   const result = await promise.json();
 
-  const filtered = result.filter(elem => elem.userId === uid)
+  const incomplete = result.filter((elem) => !elem.completed).slice(0,6);
 
-  console.log(filtered)
+  console.log(incomplete);
 }
 
-postByUser(4);
+firstSixIncompleted(4);
