@@ -4,7 +4,7 @@
 //
 //
 //
-function filterOutFalsy(arr) {
-  return arr.filter((elem) => elem);
+function convertToBoolean(arr) {
+  return arr.map((elem) => !!elem);
 }
-console.log(filterOutFalsy(["Banana", "", "Orange", "Apple"]));
+console.log(convertToBoolean(["Banana", "", "Orange", "Apple"]));
