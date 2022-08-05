@@ -4,7 +4,7 @@
 //
 //
 //
-function removerApples(arr) {
-  return arr.filter((elem) => elem !== "Apple");
+function filterOutFalsy(arr) {
+  return arr.filter((elem) => elem);
 }
-console.log(removerApples(["Banana", "Apple", "Orange", "Apple"]));
+console.log(filterOutFalsy(["Banana", "", "Orange", "Apple"]));
